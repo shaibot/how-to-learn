@@ -15,21 +15,31 @@
   max-height: 756px;
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f2f2f2;
-  z-index: -1;
-  /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  position: absolute;
-  right: 0;
-  top: 64px;
-  width: 568px;
-  height: 568px;
-  background-color: #2f80ed;
   z-index: 0;
-}
+  }
+
+  .header__square-pic {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    width: 568px;
+    height: 568px;
+    background-color: #2f80ed;
+    z-index: 1;
+  }
+
+  .header__main-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: 2;
+    width: 765px;
+    height: 608px;
+  }
 
 .logo_place_header {
   position: absolute;
@@ -40,15 +50,14 @@
 }
 
 .header__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: absolute;
   width: 730px;
-  margin: 0 0 0 64px;
+  margin: 0;
+  left: 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -60,24 +69,17 @@
   font-size: 18px;
   font-weight: 400;
   margin: 0;
-  }
+  z-index: 3;
+}
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-.header__main-illustration {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  object-fit: contain;
-  z-index: 1;
-}
-
 .description {
   padding: 100px 0 0;
-  margin: 0 0 100px;
+  margin: 0;
   display: flex;
   justify-content: center;
 }
@@ -149,10 +151,10 @@
   display: flex;
   justify-content: space-between;
   width: 1100px;
-  margin: 0 auto 100px;
   list-style: none;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0 auto;
 }
 
 .table_theme_dark {
@@ -160,18 +162,17 @@
   justify-content: space-between;
   list-style: none;
   flex-wrap: wrap;
-  margin: 0 auto 90px;
+  margin: 0 auto;
 }
 
 .table__cell {
   width: 250px;
-  margin: 60px auto 0;
+  margin-top: 60px;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
   z-index: 1;
 }
@@ -198,6 +199,10 @@
   font-weight: 400;
 }
 
+.table__text:last-child {
+  margin: 0;
+}
+
 .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
@@ -211,7 +216,7 @@
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-position: bottom left;
-  height: 890px;
+  min-height: 890px;
   background-size: 867px 637px;
   position: relative;
   display: flex;
@@ -248,7 +253,6 @@
 
 .kaufman {
   position: relative;
-  padding-top: 90px;
   padding-bottom: 90px;
   overflow: hidden;
   background-color: #1f1f1f;
@@ -261,15 +265,18 @@
   background-size: contain;
   position: absolute;
   right: -210px;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
-  margin: 90px auto 0;
+  margin-top: 90px;
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   color: white;
+  opacity: .999;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -279,10 +286,12 @@
   font-size: 24px;
   font-weight: 400;
   color: white;
-  z-index: 1;
+  opacity: .999;
+  z-index: 2;
 }
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   background-color: #1f1f1f;
   min-height: 350px;
