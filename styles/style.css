@@ -21,25 +21,25 @@
   z-index: 0;
   }
 
-  .header__square-pic {
-    position: absolute;
-    right: 0;
-    top: 64px;
-    width: 568px;
-    height: 568px;
-    background-color: #2f80ed;
-    z-index: 1;
-  }
+.header__square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
+}
 
-  .header__main-illustration {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
-    z-index: 2;
-    width: 765px;
-    height: 608px;
-  }
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 2;
+  width: 765px;
+  height: 608px;
+}
 
 .logo_place_header {
   position: absolute;
@@ -50,10 +50,8 @@
 }
 
 .header__title {
-  position: absolute;
   width: 730px;
-  margin: 0;
-  left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -94,7 +92,6 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
   width: 80%;
   min-width: 784px;
   margin: 0;
@@ -117,6 +114,11 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
+  margin: 0 0 30px;
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -174,7 +176,6 @@
   width: 200px;
   color: white;
   margin-top: 80px;
-  z-index: 1;
 }
 
 .table__heading {
@@ -256,6 +257,7 @@
   padding-bottom: 90px;
   overflow: hidden;
   background-color: #1f1f1f;
+  z-index: 0;
 }
 
 .kaufman__triangle {
@@ -265,7 +267,7 @@
   background-size: contain;
   position: absolute;
   right: -210px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .section-title_theme_dark {
@@ -275,8 +277,6 @@
   font-size: 60px;
   font-weight: 600;
   color: white;
-  opacity: .999;
-  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -286,8 +286,6 @@
   font-size: 24px;
   font-weight: 400;
   color: white;
-  opacity: .999;
-  z-index: 2;
 }
 
 .footer {
@@ -307,7 +305,7 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copiryght {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
