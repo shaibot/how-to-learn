@@ -1,3 +1,29 @@
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/logo/_place/logo_place_header.css);
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/description/description.css);
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__column-heading/footer__column-heading.css);
+@import url(../blocks/footer/__columns/footer__columns.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
+@import url(../blocks/footer/__column-links/footer__column-links.css);
+@import url(../blocks/footer/__column-link/footer__column-link.css);
+@import url(../blocks/footer/__social-icon/footer__social-icon.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,7 +32,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -19,7 +45,7 @@
   justify-content: center;
   background-color: #f2f2f2;
   z-index: 0;
-  }
+}
 
 .header__square-pic {
   position: absolute;
@@ -191,7 +217,7 @@
   font-size: 24px;
   font-weight: 600;
   color: white;
-  }
+}
 
 .table__text {
   margin: 0 0 20px;
@@ -295,7 +321,7 @@
   min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
-  }
+}
 
 .footer__columns {
   list-style: none;
@@ -321,11 +347,11 @@
 }
 
 .footer__author {
-margin: 18px 0;
-color: white;
-line-height: 25px;
-font-size: 18px;
-font-weight: 400;
+  margin: 18px 0;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__column-heading {
