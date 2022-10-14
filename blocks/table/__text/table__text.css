@@ -4,3 +4,7 @@
   font-size: 18px;
   font-weight: 400;
 }
+
+.table__text:last-child {
+  margin-bottom: 0;
+}
