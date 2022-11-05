@@ -8,3 +8,5 @@ How to learn
 * Анимация,  
 * iframe.  
 Файловая структура организована по методологии БЭМ Nested.
+  
+*Ссылка на проект:* [https://shaibot.github.io/russian-travel/index.html]
